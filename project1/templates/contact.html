@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/style.css">
+<title>My Website - Contact</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="{{ url_for('main') }}">Home</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <a class="active" href="">Contact</a>
+  <a href="{{ url_for('register') }}">Register</a>
+  <div class="login-container">
+    <form action="/auth/login">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Login Form in Navbar</h2>
+  <p>Navigation menu with a login form and a submit button inside of it.</p>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+</body>
+</html>
