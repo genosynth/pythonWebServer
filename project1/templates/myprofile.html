@@ -10,11 +10,12 @@
 <body>
 
 <div class="topnav">
-  <a class="active" href="">Home</a>
+  <a  href="/">Home</a>
   <a href="{{ url_for('about') }}">About</a>
   <a href="{{ url_for('contact') }}">Contact</a>
   <a href="{{ url_for('register') }}">Register</a>
-  <a href="/myprofile">My Profile</a>
+  <a class="active" href="">My Profile</a>
+  <a href="/logout">Log Out</a>
   <div class="login-container">
     <form action="/login" method="POST">
       <input type="text" placeholder="Username" name="username">
